@@ -63,7 +63,7 @@ A beautiful, modern, and functional Hyprland desktop environment with a focus on
 ### Option 1: Interactive Installation Script (Recommended)
 
 ```bash
-git clone https://github.com/yourusername/hyprland-dots.git
+git clone https://github.com/ijadux2/hyprland-dots.git
 cd hyprland-dots
 chmod +x install.sh
 ./install.sh
@@ -113,7 +113,7 @@ sudo apt install fonts-jetbrains-mono       # Ubuntu
 
 #### 4. Clone and Setup Dotfiles
 ```bash
-git clone https://github.com/yourusername/hyprland-dots.git ~/hyprland-dots
+git clone https://github.com/ijadux2/hyprland-dots.git ~/hyprland-dots
 cd ~/hyprland-dots
 ./setup.sh
 ```

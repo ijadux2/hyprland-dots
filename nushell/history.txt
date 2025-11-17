@@ -1,0 +1,971 @@
+ls
+cd
+clear
+ls
+cd ~/.config/nushell
+x
+clear
+ls
+nvim config.nu
+source ~/.config/nushell/config.nu
+exit
+nu
+exit
+cd ~/.config/nushell
+zi
+ls
+cd 
+sudo dnf install zoxide
+ls
+cd
+z
+ls
+cd Pictures/
+ls
+exit
+code
+x
+cd
+x
+ls
+v config.nu
+x
+ls
+nu
+nu
+ls
+cd
+cd ~/.config
+code
+x
+ls
+cd
+x
+ls
+cd kitty
+v kitty.conf
+ls
+cd nushell
+v config.nu
+ls
+cd nushell
+v config.nu
+ls
+cd
+ls
+cd co
+x
+v starship.toml
+x
+ls
+cd
+x
+ls
+cd nushell
+v config.nu
+cd nushell
+cd ~/.config/nushell
+nvim config.nu
+ls
+x
+ls
+cd bash-scripting/
+x
+ls
+c
+cd
+x
+cd .co
+v starship.toml
+x
+;q
+x
+cd .co
+v starship.toml
+x
+ls
+lt
+x
+tree
+ls
+x
+ls
+cd bash-scripting/
+x
+ls
+cd .co
+x
+cd hypr
+x
+ls
+kitten choose-font
+ls
+cd bash-scripting/
+v . 
+x
+sudo dnf copr enable alternateved/eza
+sudo dnf install eza
+x
+eza
+eza --icons
+cd nushell
+v config.nu
+lt
+x
+cd Downloads/
+ls
+unzip NerdFontsSymbolsOnly.zip
+ls
+cd Downloads/
+x
+ls
+mv SymbolsNerdFont-Regular.ttf SymbolsNerdFontMono-Regular.ttf ~/.fonts
+x
+ls
+kitten choose-icons
+kitten --help
+kitten notify "hi vaibhav"
+kitten notify "hi vaibhav are you ready for death ?"
+kitten notify "vaibhav are you ready for death ?"
+kitten notify "vaibhav are you ready for death ?"x
+code
+open
+x
+code
+opencode
+x
+ls
+ls .opncode
+ls ~/.opncode
+x
+cd .opencode
+ls
+cd bin
+x
+ls
+sudo mv opencode /usr/bin/
+x
+cd
+x
+opencode
+kitten notify "vaibhav are you ready for death ?"x
+kitten notify "vaibhav are you ready for death ?"
+cd hypr
+x
+ls
+ls
+brightnessctl set +10%
+brightnessctl set -10%
+brightnessctl i
+brightnessctl s 20
+brightnessctl s 30
+brightnessctl s 30%
+brightnessctl s 35%
+x
+ls
+cd
+v . 
+x
+cd
+x
+cd bash-scripting/
+x
+v .
+ls
+lt
+x
+lt
+x
+ls
+cd co
+cd waybar/
+x
+ls
+v config.jsonc
+ping google.com
+v style.css
+cd hypr
+x
+v . 
+x
+cd
+x
+node -v
+npm -v
+npm install -g @google/gemini-cli
+mkdir -p ~/.npm-global
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+ls
+cd nushell
+x
+v config.nu
+v
+x
+v
+npm install -g @google/gemini-cli
+cd bash-scripting/
+x
+v
+v 
+v
+x
+cd
+x
+ls
+waybar &
+ls
+cd Downloads/
+x
+ls
+cd waybar
+x
+ls
+rm config.jsonc st style.css
+cd
+cd do
+x
+ls
+cp config.jsonc style.css ~/.config/waybar
+ls
+v
+x
+cd Pictures/
+ls
+mkdir wallpapaer
+x
+ls
+mv cat_leaves.png clouds.jpg wallpapaer/
+x
+ls
+touch wallpapaer.sh
+chomd +x wallpapaer.sh
+chmod +x wallpapaer.sh
+x
+ls
+v wallpapaer.sh
+./wallpapaer.sh
+mv wallpapaer/ wallpaper
+x
+./wallpapaer.sh
+v 
+v
+notify-send
+notify-send hi
+v
+ls
+v
+ls
+x
+ls
+fastfetch
+x
+fastfetch
+ls
+x
+ls
+cd bash-scripting/
+ls
+v
+x
+ls
+cd bash-scripting/
+ls
+cd text-editor/
+x
+ls
+open
+v .
+cd text-editor/
+x
+ls
+./editor.sh
+x
+./editor.sh
+rg
+x
+rg bash .
+x
+ls
+./editor.sh
+ls
+v 
+ls
+cd text-editor/
+x
+cd bash-scripting/
+cd text-editor/
+x
+ls
+gi
+list alias
+x
+v
+gc "vim"
+gh
+x
+ls
+gc
+x
+ls
+code
+x
+ls
+cd
+x
+ls
+cd
+kitten @ ls
+x
+ls
+kitten notify "vaibhav are you ready for death ?"
+mkdir ~/.config/swaync/
+ls
+x
+swaync-client -rs
+swaync-client -R
+swaync -c ~/.config/swaync/style.css
+x
+notify-send hi
+l
+x
+ls
+cd bash-scripting/
+x
+ls
+cd
+x
+cd
+x
+ls
+swaync -r
+swaync -s ~/.config/swaync/style.css
+x
+notify-send hi buddy
+notify-send wake upto reality 
+notify-send "wake upto reality"
+config
+x
+v
+wget https://raw.githubusercontent.com/unxsh/nitch/main/setup.sh && sh setup.sh
+bash
+x
+nitch
+v
+ls
+rm setup.sh
+x
+ls
+nitch
+fastfetch
+x
+ls
+sudo dnf install krusader
+x
+sudo dnf remove krusader
+sudo dnf install PCManFM
+sudo dnf install pacmanfm
+sudo dnf install nemo
+nemo
+v
+ls
+rm Desktop/ Documents/
+x
+ls
+sudo dnf remove nautilus
+ls
+nitch
+x
+ls
+sl
+x
+ls
+cd bash-scripting/
+ls
+x
+ls
+cd operaations/
+ls
+x
+ls
+v zsh.sh
+./zsh.sh
+x
+ls
+x
+sl
+x
+ls
+cd
+spotify
+ls
+mkdir worksapce
+x
+ls
+x
+ls
+cd worksapce/
+x
+ls
+touch wall.nixi
+x
+ls
+v
+fuzzel -show drun -show-icons
+fuzzel -show drun 
+fuzzel 
+ls
+x
+ls
+lt
+vim
+x
+sudo dnf install vim
+v .vimrc
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \<\n>    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -4fLo ~/.vim/autoload/plug.vim --create-dirs \<\n>  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -2fLo ~/.vim/autoload/plug.vim --create-dirs \<\n>  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -5fLo ~/.vim/autoload/plug.vim --create-dirs \<\n>  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+x
+ls
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \<\n>    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim
+x
+ls
+fastfetch 
+nitch
+which nu
+nitch
+x
+ls
+cd nixi
+x
+ls
+./install-neovim.sh
+v
+x
+v
+x
+v
+v
+cd kitty
+x
+v kitty.conf
+ls
+cd kitty
+v kitty.conf
+sudo dnf install fd
+x
+code
+cd nixi
+x
+v .
+x
+ls
+code .
+x
+ls
+nemo . 
+nmctl
+nmcli
+nmcli connection show
+cd Downloads/
+x
+ls
+tar xvf Bibata-Original-Classic.tar.xz
+x
+ls
+mv Bibata-Original-Classic/ ~/.icons
+x
+cd ~/.icons
+x
+ls
+cd Downloads/
+ls
+tar xvf Bibata-Modern-Classic.tar.xz
+x
+mv Bibata-Modern-Classic/ ~/.icons
+ls
+cd
+nemo .
+ls
+x
+sudo dnf install tty-clock
+sudo dnf copr enable xorg62/tty-clock
+sudo dnf install git ncurses ncurses-devel
+ls
+cd worksapce/
+x
+git clone https://github.com/xorg62/tty-clock.git
+cd tty-clock<\n>make<\n>sudo make install
+cd home
+v home.nix
+home-manager switch
+flatpak install flathub io.github.seadve.Kooha
+flatpak install flathub com.spotify.Client
+ls
+cd nixi
+x
+ls
+node src/cli.js examples/advanced-demo.nixi 
+ls
+nemo .
+x
+gi
+gc "testting"
+x
+git push -m "main"
+git push
+x
+ls
+x
+ls
+cd
+x
+ls
+cd worksapce/
+x
+ls
+rm wall.nixi
+x
+ls
+code .
+x
+ls
+rm tty-clock/
+x
+ls
+cd ..
+x
+ls
+mv worksapce/ fedora-pkg
+x
+ls
+cd fedora-pkg/
+x
+ls
+glow README.md
+glob README.md
+x
+ls
+git init
+git branch -m main
+x
+ls
+gi
+x
+ls
+cd fedora-pkg/
+v . 
+code
+x
+ls
+./fedora-pkg-manager.sh
+sudo ./fedora-pkg-manager.sh 
+v fedora-pkg-manager.sh
+flatpak install flathub com.beavernotes.beavernotes -y
+x
+v
+ls
+mkdir naya
+x
+ls
+cd naya
+x
+lss
+x
+ls
+x
+code .
+x
+ls
+./hello
+v hello
+v naya.py
+cd examples/
+ls
+cd naya
+x
+ls
+./shell
+s
+./shell
+s
+x
+ls
+git init 
+git branch -m main
+x
+flatpak install flathub md.obsidian.Obsidian -y
+flatpak list
+flatpak remove md.obsidian.Obsidian
+ls
+cd Downloads/
+ls
+chmod +x Obsidian-1.10.3.AppImage
+./Obsidian-1.10.3.AppImage
+./Obsidian-1.10.3.AppImage --appimage-extract
+x
+ls
+cd Downloads/squashfs-root/
+x
+ls
+./obsidian
+sudo mv obsidian /usr/bin
+x
+obsidina
+obsidian
+x
+ls
+v obsidian.desktop
+ls
+cd Downloads/
+x
+ls
+ls -a
+cd .squashfs-root/
+x
+ls
+mkdir ~/.local/share/applications/
+cp obsidian.desktop ~/.local/share/applications/
+ls
+cd ~/.local/share/applications/
+ls
+rm obsidian.desktop
+x
+cd
+x
+flatpak install flathub md.obsidian.Obsidian
+ls
+v
+touch file.html
+v file.html
+ls
+open file.html
+x
+ls
+v file.html
+x
+ls
+tty-clock
+tty-clock -h
+sudo dnf copr enable solopasha/hyprland<\n>sudo dnf copr enable heus-sueh/packages
+x
+sudo dnf config-manager --save --setopt=copr:copr.fedorainfracloud.org:heus-sueh:packages.priority=200
+sudo dnf install wireplumber upower libgtop2 bluez bluez-tools grimblast hyprpicker btop NetworkManager wl-clipboard swww brightnessctl gnome-bluetooth aylurs-gtk-shell power-profiles-daemon gvfs nodejs gtksourceview3 libsoup3
+x
+npm install -g sass
+sudo dnf install python python3-pip<\n>pip install gpustat pywal
+x
+ls
+cd Desktop/
+x
+ls
+x
+git clone https://github.com/Jas-SinghFSU/HyprPanel.git<\n>cd HyprPanel
+npm i
+meson setup build<\n>meson compile -C build<\n>sudo meson install -C build
+ks
+ls
+x
+ls
+sudo dnf install chromium
+x
+ls
+cd terminal.dev/
+x
+ls
+x
+cd terminal.dev/
+x
+ls
+./install-fedora.sh
+x
+ls
+./install-fedora.sh
+code .
+ls
+x
+./install-fedora.sh
+x
+ls
+open README.md
+x
+nemo .
+cd
+x
+cd home
+v home.nix
+x
+ls
+lt
+ls
+x
+ls
+cd kamui/
+x
+ls
+x
+code . 
+x
+ls
+cd kamui
+x
+ls
+v README.md
+x
+dc
+cd
+x
+ls
+namo
+nemo .
+x
+l
+sx
+x
+ls
+ls | reverse
+ls
+x
+ls
+cd Downloads/
+x
+ls
+x
+ls
+tar xvf zig-x86_64-linux-0.16.0-dev.1334+06d08daba.tar.xz
+x
+ls
+cd zig-x86_64-linux-0.16.0-dev.1334+06d08daba/
+x
+ls
+./zig
+x
+ls
+sudo mv zig /usr/bin
+x
+zig
+x
+cd
+x
+ls
+sudo dnf copr enable errornointernet/quickshell<\n><\n>sudo dnf install quickshell
+sudo dnf autoclean
+sudo dnf5 autoclean
+sudo dnf install libQt6Core.so.6
+sudo dnf5 install 'dnf5-command(autoclean)'
+sudo dnf5 install dnf5-command(autoclean)
+sudo dnf5 install dnf5-command autoclean
+x
+sudo dnf autoremove
+sudo dnf clean all
+sudo dnf clean packages
+# 1. Remove orphaned, unused packages (frees up disk space on system)<\n>sudo dnf autoremove<\n><\n># 2. Clean up all DNF cache files (frees up disk space in /var/cache/dnf)<\n>sudo dnf clean all
+x
+sudo dnf copr enable errornointernet/quickshell<\n><\n>sudo dnf install quickshell
+x
+ls
+x
+dnf list 
+x
+ls
+x
+ls
+x
+sudo dnf update
+x
+ls
+cd nixi/
+x
+ls
+cd
+cd .co
+x
+ls
+git init
+git branch -m config
+x
+gi
+gc "config"
+gi
+gc "config"
+x
+ls
+cd
+x
+ls
+ping google.com
+ls
+./fedora-pkg-manager.sh
+x
+cd hypr
+x
+ls
+code .
+x
+ls
+x
+cd
+x
+ls
+x
+ls
+ls
+sudo dnf install thunar
+x
+sudo dnf remove nemo
+v
+flatpak install flathub io.github.debasish_patra_1987.linuxthemestore -y
+flatpak run io.github.debasish_patra_1987.linuxthemestore
+cd ~/.local/share/icons
+ls
+cd Downloads/
+ls
+tar xvf TokyoNight-SE.tar
+x
+ls
+cd TokyoNight-SE/
+ls
+cd ..
+x
+ls
+mv TokyoNight-SE/ ~/.icons
+sudo dnf install nautilus 
+sudo dnf remove nautilus 
+sudo dnf install nemo
+nemo
+sudo dnf remove nemo
+ls
+cd nushell
+v config.nu
+th
+cd nushell
+th
+x
+cd
+x
+sudo dnf install vesktop
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+cd Downloads/
+x
+ls
+sudo dnf install vesktop-1.6.1.x86_64.rpm
+nitch
+vesktop
+sudo dnf install grim slurp wl-clipboard
+grim -g "$(slurp)" - | wl-copy
+grim - | wl-copy
+sudo dnf install grimblast
+nitch
+v 
+grimblast save area 
+nmcli connection show
+nmcli connect 2d6b03ff-9b7a-49b4-921c-f40daff6f7bf
+nmcli --help
+v
+ls
+cd nixi
+x
+ls
+x
+ls
+cd nixi
+x
+ls
+gh
+code .
+x
+ls
+ffmpeg 
+x
+ls
+x
+cd
+x
+cd nvim 
+cd ~/.config/nvim
+x
+ls
+lt
+x
+cd
+x
+cd nixi
+x
+ls
+x
+ls
+ls | reverse
+x
+ls
+cd config/
+x
+ls
+v .
+cd .
+x
+cd ..
+x
+ls
+cd src
+x
+ls
+cd nix
+z
+cd nix
+x
+ls
+nixi
+bash
+x
+ls
+./install-linux.sh
+v .
+cd
+x
+cd nix
+code
+ls
+x
+ls
+x
+ls
+cd terminal.dev/
+x
+ls
+v . 
+x
+ls
+cd ..
+x
+ls
+ping google.com
+x
+ls
+minato 
+into
+into int 20
+into 20
+into int 
+into int 20 + 12
+x
+code .
+nixi
+node src/cli.js
+x
+cd
+ls
+mkdir hyprland-dots
+cd hyprland-dots/
+x
+git init 
+git branch -m main
+x
+ls
+x
+cd
+x
+cd co
+x
+ls

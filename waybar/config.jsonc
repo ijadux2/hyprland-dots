@@ -1,0 +1,95 @@
+
+{
+  "layer": "bottom",
+  "position": "top",
+  "height": 42,
+  "spacing": 2,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "passthrough": false,
+  "fixed-center": true,
+  "modules-left": ["hyprland/workspaces"],
+"modules-right": [
+    "network",
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "clock",
+    "clock#simpleclock",
+    "tray",
+    "custom/notification",
+    "custom/power"
+  ],
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "all-outputs": true,
+    "disable-scroll": true,
+    "active-only": false
+  },
+  "hyprland/window": {
+    "format": "{name}",
+    "format-icons": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  },
+  "tray": {
+    "show-passive-items": true,
+    "spacing": 10
+  },
+  
+  "clock#simpleclock": {
+    "tooltip": false,
+    "format": " {:%I:%M %p}"
+  },
+  "clock": {
+    "format": " {:L%a %d %b}",
+    "calendar": {
+      "format": {
+        "days": "<span weight='normal'>{}</span>",
+        "months": "<span color='#cdd6f4'><b>{}</b></span>",
+        "today": "<span color='#f38ba8' weight='700'><u>{}</u></span>",
+        "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
+        "weeks": "<span color='#a6e3a1'><b>W{}</b></span>"
+      },
+      "mode": "month",
+      "mode-mon-col": 1,
+      "on-scroll": 1
+    },
+    "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>"
+  },
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": true,
+    "interval": 1
+  },
+  "memory": {
+    "format": "@ {used:0.1f}Gb"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "  muted",
+    "format-icons": {
+      "headphone": "",
+      "default": [" ", " ", " "]
+    },
+    "on-click": "pavucontrol"
+  },
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "exec ~/.config/sway/scripts/rofi-powermenu",
+    "format": "⏻"
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "󰡟",
+      "none": "󰅺",
+      "dnd-notification": "󰂛",
+      "dnd-none": "󰂜"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw"
+  }
+}

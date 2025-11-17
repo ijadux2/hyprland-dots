@@ -218,3 +218,4 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **Enjoy your new Hyprland setup! 🎉**
+- if pkgs not found install it by yourself. :] 

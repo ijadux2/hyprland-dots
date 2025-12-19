@@ -1,0 +1,154 @@
+#!/bin/bash
+
+# Kitty Session Manager with Fuzzy Finding
+
+SESSION_DIR="$HOME/.config/kitty/sessions"
+
+# Function to create new session
+create_session() {
+    echo "Enter session name:"
+    read -r name
+    
+    if [[ -z "$name" ]]; then
+        echo "No name provided"
+        return 1
+    fi
+    
+    session_file="$SESSION_DIR/${name}.conf"
+    
+    if [[ -f "$session_file" ]]; then
+        echo "Session '$name' already exists!"
+        echo "1. Overwrite"
+        echo "2. Cancel"
+        read -r choice
+        
+        if [[ "$choice" != "1" ]]; then
+            return 1
+        fi
+    fi
+    
+    echo "Creating session '$name'..."
+    echo "Enter the number of tabs (default 4):"
+    read -r tab_count
+    
+    tab_count=${tab_count:-4}
+    
+    cat > "$session_file" << EOF
+# Session: $name
+# Created on: $(date)
+
+EOF
+    
+    for ((i=1; i<=tab_count; i++)); do
+        echo "Enter title for tab $i (or press Enter for default):"
+        read -r tab_title
+        
+        if [[ -z "$tab_title" ]]; then
+            tab_title="Tab $i"
+        fi
+        
+        echo "Enter working directory for tab $i (or press Enter for home):"
+        read -r tab_dir
+        
+        if [[ -z "$tab_dir" ]]; then
+            tab_dir="~"
+        fi
+        
+        echo "launch --type=tab --tab-title=\"$tab_title\" --cwd=\"$tab_dir\" zsh" >> "$session_file"
+    done
+    
+    echo "Session '$name' created successfully!"
+}
+
+# Function to list and select sessions
+list_sessions() {
+    if [[ ! -d "$SESSION_DIR" ]] || [[ -z "$(ls -A "$SESSION_DIR" 2>/dev/null)" ]]; then
+        echo "No sessions found in $SESSION_DIR"
+        return 1
+    fi
+    
+    echo "Available sessions:"
+    echo "=================="
+    
+    local sessions=()
+    local i=1
+    
+    for session in "$SESSION_DIR"/*.conf; do
+        if [[ -f "$session" ]]; then
+            local name=$(basename "$session" .conf)
+            echo "$i) $name"
+            sessions+=("$name")
+            ((i++))
+        fi
+    done
+    
+    echo "$i) Create new session"
+    echo "$((i+1))) Exit"
+    
+    echo
+    echo "Select a session (number):"
+    read -r choice
+    
+    if [[ -z "$choice" ]]; then
+        return 1
+    fi
+    
+    if [[ "$choice" -eq "$i" ]]; then
+        create_session
+        return 0
+    elif [[ "$choice" -eq "$((i+1))" ]]; then
+        return 0
+    elif [[ "$choice" -ge 1 && "$choice" -lt "$i" ]]; then
+        local selected_session="${sessions[$((choice-1))]}"
+        echo "Starting session: $selected_session"
+        kitty --session "$SESSION_DIR/${selected_session}.conf"
+    else
+        echo "Invalid choice"
+        return 1
+    fi
+}
+
+# Function to use fzf if available
+fzf_sessions() {
+    if ! command -v fzf &> /dev/null; then
+        echo "fzf not found, using basic selection"
+        list_sessions
+        return
+    fi
+    
+    local sessions=$(ls "$SESSION_DIR"/*.conf 2>/dev/null | xargs -n 1 basename | sed 's/.conf$//' | sort)
+    
+    if [[ -z "$sessions" ]]; then
+        echo "No sessions found"
+        return 1
+    fi
+    
+    echo "$sessions" | fzf \
+        --prompt="Select session (ESC to create new): " \
+        --header="Tab to create new session" \
+        --expect=esc \
+        --bind='tab:abort+execute(echo "create_new")' | {
+        read -r key
+        read -r selection
+        
+        if [[ "$key" == "esc" || "$selection" == "create_new" ]]; then
+            create_session
+        elif [[ -n "$selection" ]]; then
+            echo "Starting session: $selection"
+            kitty --session "$SESSION_DIR/${selection}.conf"
+        fi
+    }
+}
+
+# Main script
+case "${1:-fzf}" in
+    "list")
+        list_sessions
+        ;;
+    "create")
+        create_session
+        ;;
+    "fzf"|*)
+        fzf_sessions
+        ;;
+esac

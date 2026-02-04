@@ -17,6 +17,7 @@ cp -r ./wallpapers/* ~/Pictures/wallpapers/
 cp -r ./swaync/* ~/.config/swaync/ 
 cp -r ./waybar/* ~/.config/waybar/ 
 cp -r ./kitty/* ~/.config/kitty/ 
+cp ./starship.toml ~/.config/ 
 
 sleep 1
 
@@ -27,7 +28,7 @@ if [[ $ans == y ]]; then
   command cp -r ./zsh/.zshrc ~ 
 else
   command echo "moving forward to nushell !"
+  cp -r ./nushell/* ~/.config/nushell/
 fi
-cp -r ./nushell/* ~/.config/nushell/
 
 echo "restart you machine ! "
